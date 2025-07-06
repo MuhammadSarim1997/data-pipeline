@@ -30,15 +30,24 @@ data-pipeline/
 └── .gitignore
 </pre>
 
+## ✅ Prerequisites
+Make sure the following tools are installed before you run the pipeline:
+  - Docker – Required for containerizing all services
+  - Docker Compose – For orchestrating multi-container environments
+  - abctl (Airbyte CLI) – Used to install and manage Airbyte via Kubernetes-in-Docker (automatically handled via script)
+  - Python 3.8+ – Required to run custom Python DAG logic (e.g., API calls to Airbyte)
+
+💡 Tip: No need to manually install Airbyte – the elt.sh script will install it for you using install_abctl.sh.
+
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the Repository
 
-<pre>
-```bash
+
+'''bash
 git clone https://github.com/MuhammadSarim1997/data-pipeline.git
 cd data-pipeline
-</pre>
+bash'''
   
 ### 2. Add Environment Variables
 Create a .env file :

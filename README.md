@@ -41,7 +41,7 @@ cd data-pipeline
 </pre>
   
 ### 2. Add Environment Variables
-Create a .env file (if not already included):
+Create a .env file :
 
 <pre>
 AB_client_id="your_airbyte_client_id"
@@ -61,40 +61,32 @@ AIRFLOW_FERNET_KEY=your_fernet_key
   
 ### 3. Build and Start the Pipeline
 <pre>
-bash run_pipeline.sh
+bash ./elt.sh
 </pre>
 This script:
-
-Installs Airbyte via abctl if needed
-
-Loads the environment
-
-Initializes Airflow
-
-Starts Airflow, Airbyte, and Postgres services via Docker
+  - Installs Airbyte via abctl if needed
+  - Loads the environment
+  - Initializes Airflow
+  - Starts Airflow, Airbyte, and Postgres services via Docker
 
 ### 4. Access Interfaces
 Service	URL
+<pre>
 Airflow UI	http://localhost:8080
 Airbyte UI	http://localhost:8000
 Source DB	localhost:5433
 Destination DB	localhost:5434
-
+</pre>
 ✅ Features
-Automated Airbyte syncs via Airflow DAG
+  - Automated Airbyte syncs via Airflow DAG
+  - Polling and job status tracking with Airbyte API
+  - Custom transformations using dbt
+  - Containerized setup for easy deployment
+  
+##📌 TODO
+- Add logging and error alerts to DAG
+- Extend to S3 or Snowflake
+- Set up GitHub Actions for CI/CD
 
-Polling and job status tracking with Airbyte API
-
-Custom transformations using dbt
-
-Containerized setup for easy deployment
-
-📌 TODO
-Add logging and error alerts to DAG
-
-Extend to S3 or Snowflake
-
-Set up GitHub Actions for CI/CD
-
-📜 License
+##📜 License
 MIT License — feel free to fork and extend.

@@ -34,16 +34,16 @@ data-pipeline/
 
 ### 1. Clone the Repository
 
+<pre>
 ```bash
 git clone https://github.com/MuhammadSarim1997/data-pipeline.git
 cd data-pipeline
-
+</pre>
+  
 ### 2. Add Environment Variables
 Create a .env file (if not already included):
 
-env
-Copy
-Edit
+<pre>
 AB_client_id="your_airbyte_client_id"
 AB_client_secret="your_airbyte_client_secret"
 AB_connection_id="your_airbyte_connection_id"
@@ -57,9 +57,12 @@ AIRFLOW_DB_NAME=airflow
 AIRFLOW_USERNAME=airflow
 AIRFLOW_PASSWORD=password
 AIRFLOW_FERNET_KEY=your_fernet_key
-
+</pre>
+  
 ### 3. Build and Start the Pipeline
+<pre>
 bash run_pipeline.sh
+</pre>
 This script:
 
 Installs Airbyte via abctl if needed

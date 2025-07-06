@@ -37,7 +37,8 @@ data-pipeline/
 ```bash
 git clone https://github.com/MuhammadSarim1997/data-pipeline.git
 cd data-pipeline
-2. Add Environment Variables
+
+### 2. Add Environment Variables
 Create a .env file (if not already included):
 
 env
@@ -56,10 +57,8 @@ AIRFLOW_DB_NAME=airflow
 AIRFLOW_USERNAME=airflow
 AIRFLOW_PASSWORD=password
 AIRFLOW_FERNET_KEY=your_fernet_key
-3. Build and Start the Pipeline
-bash
-Copy
-Edit
+
+### 3. Build and Start the Pipeline
 bash run_pipeline.sh
 This script:
 
@@ -71,7 +70,7 @@ Initializes Airflow
 
 Starts Airflow, Airbyte, and Postgres services via Docker
 
-4. Access Interfaces
+### 4. Access Interfaces
 Service	URL
 Airflow UI	http://localhost:8080
 Airbyte UI	http://localhost:8000

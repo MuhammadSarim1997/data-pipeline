@@ -43,11 +43,10 @@ Make sure the following tools are installed before you run the pipeline:
 
 ### 1. Clone the Repository
 
-
-'''bash
+<pre>
 git clone https://github.com/MuhammadSarim1997/data-pipeline.git
 cd data-pipeline
-bash'''
+</pre>
   
 ### 2. Add Environment Variables
 Create a .env file :

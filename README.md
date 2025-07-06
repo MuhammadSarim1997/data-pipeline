@@ -28,8 +28,6 @@ data-pipeline/
 ├── .env # Environment variables
 └── .gitignore
 
-Copy
-Edit
 
 ## ⚙️ Setup Instructions
 

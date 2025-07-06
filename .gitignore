@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+airbyte_sync_file.sh
+stop.sh
+*.env
+scripts

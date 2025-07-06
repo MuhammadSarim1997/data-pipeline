@@ -77,16 +77,16 @@ Airbyte UI	http://localhost:8000
 Source DB	localhost:5433
 Destination DB	localhost:5434
 </pre>
-✅ Features
+## ✅ Features
   - Automated Airbyte syncs via Airflow DAG
   - Polling and job status tracking with Airbyte API
   - Custom transformations using dbt
   - Containerized setup for easy deployment
   
-##📌 TODO
+## 📌 TODO
 - Add logging and error alerts to DAG
 - Extend to S3 or Snowflake
 - Set up GitHub Actions for CI/CD
 
-##📜 License
+## 📜 License
 MIT License — feel free to fork and extend.

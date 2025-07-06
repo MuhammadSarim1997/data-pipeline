@@ -28,7 +28,6 @@ data-pipeline/
 ├── .env # Environment variables
 └── .gitignore
 
-bash
 Copy
 Edit
 

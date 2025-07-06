@@ -13,21 +13,22 @@ This repository contains a modular, end-to-end ELT pipeline that leverages **Air
 
 ## 📁 Project Structure
 
+<pre>
 data-pipeline/
-├── airflow/ # Airflow config & DAGs
-│ ├── dags/
-│ │ ├── Airbyte_conection.py
-│ │ └── elt_dag.py
-│ └── airflow.cfg
-├── custom_postgres/ # DBT transformation project
-│ ├── dbt_project.yml
-│ └── macros/
-├── Dockerfile # Custom Airflow image with providers
-├── docker-compose.yml # Service orchestration
-├── source_db_init/ # SQL seed script for source Postgres
-├── .env # Environment variables
+├── airflow/                  # Airflow config & DAGs
+│   ├── dags/
+│   │   ├── Airbyte_conection.py
+│   │   └── elt_dag.py
+│   └── airflow.cfg
+├── custom_postgres/          # DBT transformation project
+│   ├── dbt_project.yml
+│   └── macros/
+├── Dockerfile                # Custom Airflow image with providers
+├── docker-compose.yml        # Service orchestration
+├── source_db_init/           # SQL seed script for source Postgres
+├── .env                      # Environment variables
 └── .gitignore
-
+</pre>
 
 ## ⚙️ Setup Instructions
 
